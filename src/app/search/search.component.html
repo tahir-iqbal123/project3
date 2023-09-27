@@ -1,0 +1,5 @@
+<div class="alert alert-warning text-center">
+    <label for=""> <b> One-Way Data Binding : </b> Enter data to search </label>
+    <input type="text" class="mx-3" (input)="searchMethod($event)">
+    <span> You Searched for: "{{ searchData }}"</span>
+</div>

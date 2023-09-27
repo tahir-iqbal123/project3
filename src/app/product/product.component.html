@@ -1,0 +1,19 @@
+<div class="product-container d-flex border shadow p-2" *ngFor="let p of product" [ngStyle]="{backgroundColor: p.available === 'Available' ? 'lightblue' : 'pink'}">
+    <div class="img-container px-2">
+        <img [src]="p.image" alt="">
+    </div>
+    <div class="container-content mt-2">
+        <div class="product-name">
+            <h6> {{ p.name }} </h6>
+        </div>
+        <div class="content-details d-flex">
+            <div class="details"> Price : {{ p.price }} </div>
+            <div class="details"> Color : {{ p.color }}</div>
+            <div class="details" [ngStyle]="{color: p.available === 'Available' ? 'Green' : 'Red'}"> <b> {{ p.available }} </b></div>
+        </div>
+    </div>
+    <div class="order mt-4">
+        <button class="btn btn-secondary"> Show Details </button>
+        <button class="btn btn-secondary mx-2"> Buy Now </button>
+    </div>
+</div>

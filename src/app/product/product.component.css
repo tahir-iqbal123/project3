@@ -1,0 +1,15 @@
+.product-container
+{
+    margin: 10px auto; 
+    width:90%; 
+    border-radius:10px; 
+    /* background-color: lightblue; */
+}
+.container-content
+{
+    width:60%; 
+}
+.details
+{
+    width:200px; 
+}
